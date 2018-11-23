@@ -1,0 +1,18 @@
+{
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/**/*.{js,jsx}"],
+    "coverageDirectory": "coverage",
+    "moduleFileExtensions": ["js", "json", "jsx"],
+    "moduleDirectories": ["node_modules", "src"],
+    "coverageReporters": ["html", "text"],
+    "moduleNameMapper": {
+        "\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/utils/__mocks__/fileMock.js",
+        "\\.(css|less|scss|sass)$": "identity-obj-proxy",
+        "\\.svg$":"<rootDir>/test/utils/__mocks__/svgMock.js"
+    },
+    "setupFiles": ["./test/setup.js"],
+    "verbose": true,
+    "notify": true,
+    "testURL": "http://localhost/"
+}
+

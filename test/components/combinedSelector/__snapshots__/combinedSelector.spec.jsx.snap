@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`customized CombinedSelector combined treeSelect and selectList test with demo in md 1`] = `
+<input
+  className="ant-input ant-dropdown-trigger"
+  disabled={false}
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  onMouseDown={[Function]}
+  onTouchStart={[Function]}
+  placeholder="请选择分组门店"
+  readOnly={true}
+  style={
+    Object {
+      "height": "30px",
+      "width": "320px",
+    }
+  }
+  type="text"
+  value="已选择2/15 家门店"
+/>
+`;

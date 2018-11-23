@@ -1,0 +1,11 @@
+/.vscode/
+.DS_Store
+.idea/
+/node_modules/
+/coverage/
+npm-debug.log
+yarn-error.log
+*.swp
+*.swo
+.cache
+/styleguide/

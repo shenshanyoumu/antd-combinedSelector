@@ -1,0 +1,119 @@
+@import '~antd/lib/style/themes/default.less';
+
+.selectorContainer{  
+    .tree-selector {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+      box-shadow: 0 1px 6px rgba(0,0,0,.2);
+      padding: 16px;
+
+      .supply-component-multfilter{
+        &__content{
+          border-right: 0;
+          width: 268px;
+        }
+        &__title{
+          display: none;
+        }
+        &__tree{
+          height: 268px;
+          max-width: 270px;
+          overflow-y: scroll;
+          overflow-x:hidden;
+          padding: 0;
+          .ant-tree-node-content-wrapper {
+            width: calc(~'100% - 45px');
+          }
+        }
+        &__search{
+          margin: 0 0 8px;
+          width: 100%;
+          .ant-input-affix-wrapper{
+            .ant-input{
+              border: 1px solid #ddd;
+
+              &:focus{
+                box-shadow: 0 0;
+              }
+            }
+          }
+        }
+
+        &--searched-text{
+          color:red;
+        }
+      }
+
+      &.multiple {
+        width: 600px;
+        height: 340px;
+      }
+    
+      &:not(.multiple) {
+        width: 295px;
+        height: 340px;
+      }
+
+      &__list{
+        position: relative;
+        flex: 1;
+        height: calc(~'100% + 32px');
+        margin: -16px 0 -16px 16px;
+        padding: 10px 0 7px;
+        border-left: 1px solid #ddd;
+
+        .list__content{
+          height: calc(~'100% - 36px');
+          min-height: calc(~'100% - 36px');
+          overflow-y: auto;
+
+          .combined-selector{
+            margin-left: 35px;
+            height: 250px;
+            border: none;
+            transform: scale(0.5);
+            background-image: url('./assets/combined-selector.png');
+          }
+
+          .ant-row.list__item{
+            padding: 0 16px;
+            height: 30px;
+            line-height: 30px;
+
+            &:hover {
+              background: @item-hover-bg;
+            }
+        
+            a {
+              float: right;
+              text-decoration: none;
+            }
+          }
+        }
+        .list__action{
+          padding-right: 16px;
+          padding-left: 16px;
+          margin-right: -16px;
+          border-top: 1px solid #ddd;
+          height: 42px;
+          line-height: 42px;
+          text-align: right;
+
+          .confirm_btn{
+            margin-left: 8px;
+          }
+
+          .showMessage{
+            float: left;
+            
+            .selected{
+              color: #FF5453;
+            }
+          }
+        }
+      }
+    }
+}
+
+
