@@ -1,6 +1,6 @@
 {
     "name": "antd-combinedselector",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "components based on antd",
     "main": "src/index.js",
     "repository": {
